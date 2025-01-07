@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "token-env"
+version = "0.0.1"
+description = "Token gymnasium environment"
+authors = ["Beyazit Yalcinkaya <beyazit@berkeley.edu>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "token_env" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gymnasium = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
